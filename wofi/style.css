@@ -1,0 +1,35 @@
+* {
+    --primary: #7aa2f7;
+    --surface: #1a1b26;
+    --on-surface: #c0caf5;
+    --secondary: #4f00de;
+}
+
+window {
+    background-color: var(--surface);
+    border: 2px solid var(--primary);
+    border-radius: 12px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+}
+
+#input {
+    margin: 8px;
+    padding: 8px 12px;
+    border: 2px solid var(--secondary);
+    background-color: var(--secondary);
+    color: var(--on-surface);
+    border-radius: 8px;
+    outline: none;
+}
+
+#entry {
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: var(--on-surface);
+}
+
+#entry:selected {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
